@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +9,25 @@
     <meta name="author" content="XuYang">
     <title>XuYang Home</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="icon" href="logo.jpg">
+    <!-- FontAwesome for the new resume section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/images/logo/logo.jpg">
 </head>
 <body class="is-preload">
-    <!-- 动态背景 -->
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    
-    <!-- 主包装器 -->
-    <div id="wrapper">
+    <div class="main-container">
+        <section id="home" class="page-section">
+            <!-- 动态背景 -->
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            
+            <!-- 主包装器 -->
+            <div id="wrapper">
         <header id="panel" class="panel-cover">
             <div class="panel-main">
                 <div class="panel-main__inner panel-inverted">
                     <div class="panel-main__content">
                         <div class="ih-item circle effect right_to_left">            
-                            <div class="img"><img src="logo.jpg" alt="img" class="js-avatar iUp profilepic"></div>
+                            <div class="img"><img src="assets/images/logo/logo.jpg" alt="img" class="js-avatar iUp profilepic"></div>
                             <div class="info iUp">
                                 <div class="info-back">
                                     <h2>追求卓越</h2>
@@ -36,7 +40,7 @@
                         </h1>
                         <p class="panel-cover__subtitle panel-subtitle iUp">Code Create Life</p>
                         <hr class="panel-cover__divider iUp" />
-                        <p id="description" class="panel-cover__description iUp">如何得与凉风约, 不共尘沙一并来!
+                        <p id="description" class="panel-cover__description iUp">如何得与凉风与? 不共尘沙一并来!
                             <br/>
                             <strong>-「中牟道中」</strong>
                         </p>
@@ -45,10 +49,10 @@
                                 <nav class="cover-navigation cover-navigation--primary">
                                     <ul class="navigation">
                                         <li class="navigation__item">
-                                            <a href="https://github.com/x-u-y-a-n-g/" class="blog-button" target="_blank">简历</a>
+                                            <a href="https://github.com/x-u-y-a-n-g/" class="blog-button" target="_blank" data-i18n="home_resume">简历</a>
                                         </li>
                                         <li class="navigation__item">
-                                            <a href="https://www.zhihu.com/people/xuyang/" class="blog-button" target="_blank">关于</a>
+                                            <a href="https://www.zhihu.com/people/xuyang/" class="blog-button" target="_blank" data-i18n="home_about">关于</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -63,15 +67,15 @@
                                             </a>
                                         </li>
                                         <li class="navigation__item">
-                                            <a href="http://www.cnblogs.com/x-u-y-a-n-g/" title="博客园" target="_blank">
+                                            <a href="http://www.cnblogs.com/x-u-y-a-n-g/" title="博客" target="_blank">
                                                 <i class='social iconfont icon-cnblogs'></i>
-                                                <span class="label">博客园</span>
+                                                <span class="label" data-i18n="label_blog">博客</span>
                                             </a>
                                         </li>
                                         <li class="navigation__item">
                                             <a href="mailto:xuyang041211@gmail.com" title="邮箱">
                                                 <i class='social iconfont icon-email'></i>
-                                                <span class="label">邮箱</span>
+                                                <span class="label" data-i18n="label_email">邮箱</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -86,6 +90,147 @@
                 <p class="power">Powered By XuYang</p>
             </div>
         </header>
+        
+         <div class="scroll-down-btn">
+             <a href="#project-page" title="向下滚动">
+                 <i class="iconfont icon-arrow-down" style="font-size: 30px; color: rgba(255,255,255,0.7);">vvv</i>
+             </a>
+         </div>
+    </div>
+    </section>
+
+    <section id="project-page" class="page-section">
+        <!-- Resume Navigation -->
+        <nav class="resume-nav">
+            <div class="nav-content">
+                <div class="menu-group">
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i> <span data-i18n="menu">菜单</span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="#project-page"><span data-i18n="nav_about">关于</span></a></li>
+                        <li><a href="#publications"><span data-i18n="nav_publications">论文</span></a></li>
+                        <li><a href="#scholarships"><span data-i18n="nav_scholarships">奖学金</span></a></li>
+                        <li><a href="#competitions"><span data-i18n="nav_competitions">竞赛</span></a></li>
+                        <li><a href="#honors"><span data-i18n="nav_honors">荣誉奖项</span></a></li>
+                        <li><a href="#projects"><span data-i18n="nav_projects">项目</span></a></li>
+                        <li><a href="#educations"><span data-i18n="nav_educations">教育经历</span></a></li>
+                    </ul>
+                </div>
+                <button class="lang-toggle" type="button" aria-label="Switch language" data-label-zh="EN" data-label-en="中文">EN</button>
+            </div>
+        </nav>
+
+
+        <div class="resume-container">
+            <!-- Sidebar -->
+            <div id="resume-sidebar" class="resume-sidebar">
+                <div class="profile_box">
+                    <div class="author__avatar">
+                        <img src="assets/images/resume/avatar.jpg" alt="许洋">
+                    </div>
+                    <div class="profile_meta">
+                        <div class="author__content">
+                            <h3 class="author__name" data-i18n="author_name">许洋</h3>
+                            <p class="author__bio" data-i18n="author_bio">南开大学</p>
+                        </div>
+                    </div>
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls">
+                            <li><i class="fa fa-fw fa-map-marker"></i> <span data-i18n="author_address">Tianjin, China</span></li>
+                            <li><a href="mailto:xuyang041211@gmail.com"><i class="fas fa-fw fa-envelope"></i> <span data-i18n="author_email">Email</span></a></li>
+                            <li><a href="https://github.com/X-u-Y-a-n-g"><i class="fab fa-fw fa-github"></i> Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div id="resume-main" class="resume-main">
+                <h1 id="about"><i class="fas fa-money-bill-wave"></i> <span data-i18n="about_heading">关于</span></h1>
+                <p data-i18n="about_paragraph">大家好，我叫许洋，目前是南开大学计算机学院本科生。</p>
+                <!-- publications -->
+                <!-- <h1 id="publications"><i class="fas fa-file-alt"></i> Publications</h1>
+                
+                <div class='paper-box'>
+                    <div class='paper-box-image'>
+                        <div>
+                            <div class="badge"> </div>
+                            <img src='' alt="">
+                        </div>
+                    </div>
+                    <div class='paper-box-text'>
+                        <p><a href="" target="_blank"><strong> </strong></a></p>
+                        <p>
+                            <span class="paper-role-badge"> </span>
+                            <span class="paper-time-badge"> </span>
+                        </p>
+                        <ul style="margin-top: 0.5em; padding-left: 1.5em;">
+                            <li> </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <h1 id="scholarships"><i class="fas fa-money-bill-wave"></i> <span data-i18n="scholarships_heading">奖学金</span></h1>
+                <ul>
+                    <li><span data-i18n="scholarship_2024">2024.10: 💰南开大学公能奖学金</span></li>
+                    <li><span data-i18n="scholarship_2025">2025.10: 💰南开大学公能奖学金</span></li>
+                </ul>
+
+                <h1 id="competitions"><i class="fas fa-trophy"></i> <span data-i18n="competitions_heading">竞赛</span></h1>
+                <ul>
+                    <li><span data-i18n="competition_2025_1">2025.5: 🏆南开大学火山杯AI应用创新大赛——软件赛道一等奖</span></li>
+                    <li><span data-i18n="competition_2025_2">2025.5: 🏆南开大学校长杯创新创业大赛——三等奖</span></li>
+                    <li><span data-i18n="competition_2025_3">2025.5: 🏆天津市挑战杯天津市大学生课外学术科技作品竞赛——一等奖</span></li>
+                    <li><span data-i18n="competition_2025_4">2025.5: 🏆全国大学生信息安全竞赛——三等奖</span></li>
+                    <li><span data-i18n="competition_2025_5">2025.5: 🏆中国高校计算机大赛-AIGC创新赛——一等奖</span></li>
+                    <li><span data-i18n="competition_2025_6">2025.5: 🏆全国大学生计算机系统能力竞赛-智能计算创新设计赛——三等奖</span></li>
+                    <!-- <li><span data-i18n="competition_2025_7">2025.5: 🏆南开大学火山杯AI应用创新大赛</span> <a href="https://www." target="_blank" data-i18n="competition_2025_7_link">官网</a></li> -->
+                </ul>
+
+                <h1 id="honors"><i class="fas fa-medal"></i> <span data-i18n="honors_heading">荣誉奖项</span></h1>
+                <ul>
+                    <li><span data-i18n="honor_2024">2024.11: 🎖南开大学三好学生</span></li>
+                    <li><span data-i18n="honor_2025">2025.11: 🎖南开大学三好学生</span></li>
+                </ul>
+
+                <!-- <h1 id="projects"><i class="fas fa-cogs"></i> <span data-i18n="projects_heading">项目</span></h1>
+                
+                <div class='paper-box'>
+                    <div class='paper-box-image'>
+                        <div>
+                            <div class="badge"> </div>
+                            <img src=' ' alt=" ">
+                        </div>
+                    </div>
+                    <div class='paper-box-text'>
+                        <p><a href=" " target="_blank"><strong> </strong></a></p>
+                        <p>
+                            <span class="paper-role-badge"> </span>
+                            <span class="paper-time-badge"> </span>
+                        </p>
+                        <ul style="margin-top: 0.5em; padding-left: 1.5em;">
+                            <li> </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <h1 id="educations"><i class="fas fa-graduation-cap"></i> <span data-i18n="educations_heading">教育经历</span></h1>
+                <ul>
+                    <li data-i18n-html="education_nku"><em>2023.09 -- </em>, <strong><a href="https://cc.nankai.edu.cn/" target="_blank">计算机学院</a>，<a href="https://www.nankai.edu.cn/" target="_blank">南开大学</a></strong>
+                    </li>
+                </ul>
+
+                <div class="logo-row">
+                    <img src="assets/images/resume/NKU.png" alt="NKU Logo">
+                </div>
+
+                <footer class="site-footer">
+                    <p>&copy; 2025 <a href="https://github.com/X-u-Y-a-n-g" target="_blank">Yang Xu</a> all rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </section>
     </div>
     
     <script src="assets/js/main.js"></script>
